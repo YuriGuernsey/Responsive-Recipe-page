@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: 'outfit';
+      src: url('./assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'young-serif';
+      src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'outfit', sans-serif;
+     
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: #F3E5D7;
+    }
+    .recipe{
+      width: 50%;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 24px;
+      margin-top: 50px;
+    }
+    .recipe__image{
+      width: 100%;
+      border-radius: 24px;
+      margin-bottom: 20px;
+    }
+    h1{
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-family: 'young-serif', serif;
+    }
+    h2{
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 1.2rem;
+      margin-bottom: 32px;
+      color: #5F564D;
+    }
+
+    .preperation{
+      margin-bottom: 32px;
+      background: #FFF7FB;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .preperation h2{
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-family: 'outfit', sans-serif;
+    }
+
+ 
+    .preperation ul li{
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      padding-left: 16px;
+    }
+    .preperation ul li b{
+      font-weight: bold;
+    }
+
+    h2{
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #854632;
+      font-family: 'young-serif', serif;
+    }
+  
+    ul{
+      margin-bottom: 20px;
+    }
+    ul li{
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      padding-left: 16px;
+    }
+    ul li b{
+      font-weight: bold;
+      color:#5F564D;
+    }
+
+    hr{
+      margin-bottom: 32px;
+      margin-top: 32px;
+      color: #E3DDD7;
+    }
+
+    ol{
+      margin-bottom: 32px;
+    }
+
+    ol li{
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      padding-left: 16px;
+    }
+
+    ol li::marker{
+      color: #854632;
+      font-weight: bold;
+    }
+
+    ol li b{
+      font-weight: bold;
+      color:#5F564D;
+    }
+
+    table{
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
+    table th, table td{
+      border-bottom: 1px solid #E3DDD7;
+
+    }
+table tr{
+  padding: 12px;
+}
+    table th{
+      font-size: 1.2rem;
+      padding: 10px;
+      text-align: left;
+      padding-left: 32px;
+      font-weight: normal;
+
+    }
+
+    table td{
+      font-size: 1.2rem;
+      padding: 10px;
+      text-align: left;
+color:#854632;
+font-weight: bold;
+    }
+
+    @media (max-width: 768px){
+      body{
+        margin: 0;
+      }
+      .recipe{
+        width: 100%;
+        border-radius: 0;
+      margin-top: 0;
+      padding: 0;
+      }
+
+      article{
+        padding: 20px;
+      }
+
+      .recipe__image{
+        border-radius: 0;
+      }
+      h1{
+        font-size: 2rem;
+      }
+      h2{
+        font-size: 1.2rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+      .preperation h2{
+        font-size: 1.2rem;
+      }
+      .preperation ul li{
+        font-size: 1rem;
+      }
+      ul li{
+        font-size: 1rem;
+      }
+      ol li{
+        font-size: 1rem;
+      }
+      table th, table td{
+        font-size: 1rem;
+      }
+
+    }
+    
+
+
+  </style>
+</head>
+<body>
+
+<section class="recipe">
+  <img src="./assets/images/image-omelette.jpeg" alt="Omelette" class="recipe__image">
+  <article>
+  <h1>Simple Omelette Recipe</h1>
+  <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+    to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+
+    <div class="preperation">
+      <h2>Preparation time</h2>
+      <ul>
+       <li><b>Total:</b> Approximately 10 minutes</li>
+       <li><b>Preparation:</b> 5 minutess</li>
+       <li><b>Cooking:</b> 5 minutes</li>
+
+      </ul>
+    </div>
+
+  <h2>Ingredients</h2>
+  <ul>
+    <li>2-3 large eggs</li>
+    <li>Salt, to taste</li>
+    <li>Pepper, to taste</li>
+    <li>1 tablespoon of butter or oil</li>
+    <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+  </ul>
+
+  <hr/>
+
+  <h2>Instructions</h2>
+  <ol>
+    <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+      You can add a tablespoon of water or milk for a fluffier texture.</li>
+    <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+    <li><b>Cook the omelette:</b>Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+      the eggs evenly coat the surface.</li>
+    <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+      middle, sprinkle your chosen fillings over one half of the omelette.</li>
+    <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
+      fillings. Let it cook for another minute, then slide it onto a plate.</li>
+    <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+  </ol>
+<hr/>
+
+<h2>Nutrition</h2>
+<p>The table below shows nutritional values per serving without the additional fillings.</p>
+<table>
+  <tr>
+    <th>Calories</th>
+    <td>277kcal</td>
+  </tr>
+  <tr>
+    <th>Carbs</th>
+    <td>0g</td>
+  </tr>
+  <tr>
+    <th>Protein</th>
+    <td>20g</td>
+  </tr>
+  <tr>
+    <th>Fat</th>
+    <td>22g</td>
+  </tr>
+
+</table>
+</article> 
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://yuriguernsey.com/">Yuri Alves</a>.
+  </div>
+</body>
+</html>
